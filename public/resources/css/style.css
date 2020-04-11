@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', 'Cinzel Decorative', cursive, sans-serif;
+    font-weight: 100;
+  }
+  section {
+    position: relative;
+    display: flex;
+    height: 90vh;
+    background: #000
+  }
+  section .screen {
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+  }
+  
+  section .screen .title {
+    height: 0;
+    opacity: 0.1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    visibility: hidden;
+    font-size: 35px;
+  }
+  section .screen:hover .title {
+    opacity: 0.8;
+    transform: translateY(180px);
+    -webkit-transform: translateY(180px);
+    transition-delay: 1s; 
+    -webkit-transition-delay: 1s;
+    visibility: visible;
+  }
+  section .screen:hover {
+    flex-grow: 5;
+  }
+  section .screen:nth-child(1) {
+    background: url("../../wp-content/uploads/chess-tacticians.jpg") no-repeat center center; ;
+  }
+  section .screen:nth-child(2) {
+    background: url("../../wp-content/uploads/robot.jpeg") no-repeat center center; ;
+  }
+  section .screen .title {
+    color: #fff;
+    font-family: 'Cinzel Decorative';
+  }
+    .container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px; 
+  }
+  
+  .header {
+    height: 750px;
+    text-align: right;
+  }
+  
+  .header .container {
+    position: relative;
+    top: 450px;
+  }
+  .header h1 {
+    color: #fff;
+    line-height: 100px; 
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase; 
+  }
+  
+  
+  .header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+  }
+  
+  .btn {
+    color: #fff;
+    background: #4a4e6a;
+    padding: 10px 40px;
+    text-decoration: none; 
+    transition: background .5s;
+    opacity: 0.9; 
+  }
+  
+  .nav { 
+    background:#4a4e6a;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+  }
+  .nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    text-align: right;
+  }
+  .nav li {
+    display: inline-block; 
+  }
+  .nav ul li {
+    color: #fff;
+    height: 80px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+    position: relative; 
+  }
+  .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo {
+    text-align: left;
+    margin: 5px 15px;
+    position: absolute;
+  }
+  .logo h1 {
+    color: whitesmoke;
+    font-family: 'Cinzel Decorative';
+  }
+  .btn:hover, .nav li:hover {
+    background: gainsboro;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+  
+  
+  .main .container {
+    padding: 80px 40px;
+    margin: 0 auto;
+  }
+  
+  .main img {
+    float: right;
+    position: relative;
+  }
+  
+  .jumbotron {
+    background: url("../../wp-content/uploads/geisel.jpg") center center;
+    filter: grayscale(70%);
+    background-size: cover;
+    height: 600px; 
+  }
+  
+  .jumbotron .container {
+    position: relative;
+    top: 220px;
+  }
+  
+  .jumbotron h2 {
+    color: #fff;
+    text-align: left; 
+  }
+  
+  .jumbotron p {
+    color: #fff; 
+    text-align: left; 
+  }
+  
+  .jumbotron .btn {
+    margin: 10px 0 0;
+    float: left; 
+  }
+  
+  .footer { 
+    background: #000;
+    height: 80px; 
+    padding-bottom: 50px;
+  }
+  
+  .footer p { 
+    color: #fff;
+    font-size: 14px;  
+    height: 80px; 
+    line-height: 80px;
+    margin: 0;  
+  }
+  
+  @media (max-width: 500px) {
+    .header h1 {
+      font-size: 50px;
+      line-height: 64px;
+    }
+  
+    .main, .jumbotron {
+      padding: 0 30px;
+    }
+  
+    .main img {
+      width: 100%;
+    }
+  }
